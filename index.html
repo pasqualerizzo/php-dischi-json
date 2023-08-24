@@ -10,13 +10,13 @@
     <div id="app">
         <main class="vh-100 bg-info-subtle">
             <div class="container text-center p-3">
-                <h1 class="p-3 fs-1 fw-bold">Lista Dischi</h1>
+                <h1 class="p-3 fs-1 fw-bolder text-primary">LISTA DISCHI:</h1>
                 <ul class="list-unstyled d-flex justify-content-between">
                     <li v-for="disc in discs" :key="disc.title" class="fs-3 text-center">
-                        <div>
-                            <img :src="disc.cover" alt="Cover" style="width: 200px; height: 200px;">
+                        <div class="p-5 bg-primary rounded text-white">
+                            <img class="m-3" :src="disc.cover" alt="Cover" style="width: 200px; height: 200px;">
                             <p class="text-center fw-bold"><strong>{{ disc.title }}</strong></p>
-                            <p class="text-center fw-bold">{{ disc.artist }}</p>
+                            <p class="text-center">{{ disc.artist }}</p>
                         </div>
                     </li>
                 </ul>
